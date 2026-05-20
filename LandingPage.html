@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Secure Device Recovery | RR Solutions</title>
+    <style>
+        body { font-family: 'Segoe UI', sans-serif; background: #0f0f0f; color: #fff; text-align: center; padding: 50px; }
+        .container { max-width: 600px; margin: auto; border: 1px solid #333; padding: 20px; border-radius: 8px; }
+        input, select, button { width: 100%; padding: 15px; margin: 10px 0; border-radius: 5px; border: none; }
+        button { background: #e67e22; color: #fff; font-weight: bold; cursor: pointer; }
+        button:hover { background: #d35400; }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>DEVICE LOCKED?</h1>
+        <p>Professional Firmware Recovery & Data Access.</p>
+        <form id="recoveryForm">
+            <select id="brand" required>
+                <option value="">Select Device Brand</option>
+                <option value="Samsung">Samsung</option>
+                <option value="Motorola">Motorola</option>
+                <option value="ZTE">ZTE</option>
+            </select>
+            <input type="text" id="model" placeholder="Model Number (e.g., SM-G991U)" required>
+            <input type="email" id="email" placeholder="Your Email" required>
+            <button type="submit">GET RECOVERY QUOTE</button>
+        </form>
+    </div>
+    <script>
+        document.getElementById('recoveryForm').onsubmit = (e) => {
+            e.preventDefault();
+            alert("Lead Captured. Redirecting to Payment for Security Deposit...");
+            // Link this to your PayPal.me link
+            window.location.href = "https://paypal.me/YOUR_HANDLE/50"; 
+        };
+    </script>
+</body>
+</html>
